@@ -35,7 +35,7 @@ background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+
 
         .box {
             background-color: rgba(17, 19, 21, 0.203);
-            margin: 5px;
+            margin: 3px;
             border-radius: 10px;
         }
 
@@ -43,14 +43,12 @@ background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+
             grid-area: 2/1/5/2;
             background-image: url(./Images/image1.png);
             background-size: cover;
-
             p {
                 font-family: 'Times New Roman', Times, serif;
                 color: aliceblue;
-                position: relative;
                 font-size: 23px;
-                top: 500px;
-                left: 10px;
+                margin-top: 500px;
+                margin-left: 20px;
             }
         }
 
@@ -93,6 +91,7 @@ background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+
             /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
             display: flex;
             justify-content: space-evenly;
+            align-items: center;
             .date{
                 color: aliceblue;
                 font-size: 20px;
@@ -100,15 +99,11 @@ background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+
             }
             .tt{
                 color: aliceblue;
-                position: relative;
-                top: 50px;
-                left: 50px;
+                margin-top: 5px;
                 font-size: 30px;
             }
             .boy{
                 width: 60%;
-                position: relative;
-                left: 100px;
             }
         }
 
@@ -156,9 +151,7 @@ background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+
             background-size: cover;
             h2 {
                 color: aliceblue;
-                position: relative;
-                top: 310px;
-                left: 20px;
+                margin: 290px 10px;
             }
         }
 
@@ -184,6 +177,124 @@ background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+
                 margin: 10px 12px;
             }
         }
+        @media(max-width:1300px){
+            .container{
+                height: 110vh;
+            }
+            .boxes{
+                grid-template-columns: 250px 250px 200px;
+            grid-template-rows: 50px 175px 150px 175px 150px; 
+            }
+            .box1{
+                grid-area: 4/1/6/2;
+                p{
+                    font-size: 20px;
+                    margin: 15px;
+                }
+            }
+            .box2{
+                grid-area: 1/1/2/4;
+            }
+            .box3{
+                grid-area: 2/1/3/4;
+                .date{
+                    font-size: 14px;
+                }
+                .tt{
+                    font-size: 15px;
+                    padding: 0 20px;
+                }
+                .boy-hd{
+                    width: 40%;
+                    margin-left: 50px;
+                }
+                .boy{
+                    height: 100%;
+                }
+            }
+            .box4{
+                grid-area: 3/1/4/2;
+                font-size: 15px;
+            }
+            .box5{
+                grid-area: 3/3/4/4;
+            }
+            .box6{
+                grid-area: 5/3/6/5;
+                font-size: 15px;
+            }
+            .box7{
+                grid-area: 4/2/6/3;
+                font-size: 15px;
+                h2{
+                    text-align: start;
+                }
+            }
+            .box8{
+                grid-area: 3/2/4/3;
+                font-size: 15px;
+            }
+            .box9{
+                grid-area: 4/3/5/5;
+                font-size: 15px;
+            }
+        }
+        @media(max-width:700px){
+            .container{
+                height: 120vh;
+            }
+            .boxes{
+                grid-template-columns: 250px 250px;
+                grid-template-rows: 50px 150px 125px 250px 150px;
+            }
+            .box1{
+                grid-area: 4/1/5/2;
+                p{
+                    font-size: 15px;
+                }
+            }
+            .box2{
+                grid-area: 1/1/2/3;
+            }
+            .box3{
+                grid-area: 2/1/3/3;
+            }
+            .box4{
+                grid-area: 3/1/4/2;
+                h2{
+                    font-size: 15px;
+                }
+            }
+            .box5{
+                grid-area: 5/1/6/2;
+                p{
+                    font-size: 15px;
+                    margin-left: 45px;
+                }
+            }
+            .box6{
+                display: none;
+            }
+            .box7{
+                grid-area: 4/2/5/3;
+                h2{
+                    margin-top: 210px;
+                    font-size: 15px;
+                }
+            }
+            .box8{
+                grid-area: 3/2/4/3;
+                h2{
+                    font-size: 15px;
+                }
+            }
+            .box9{
+                grid-area: 5/2/6/3;
+                h2{
+                    font-size: 15px;
+                }
+            }
+        }
     </style>
 </head>
 
@@ -198,7 +309,7 @@ background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+
                 <form action=""">
                     <input type="text" class="t-field" placeholder="Search for a Restaurant or a Dish">
                 </form>
-                <i class="fa-solid fa-microphone micro"></i>
+                <!-- <i class="fa-solid fa-microphone micro"></i> -->
             </div>
             <div class="box box3">
                 <div class="info">
